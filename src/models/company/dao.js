@@ -3,14 +3,18 @@ const mongoose = require('mongoose');
 const CompanySchema = new mongoose.Schema({
     name: {
         type: String,
-        required: true
     },
-    district: {
+    address: {
         type: String,
-        required: true
     },
-    description: {
+    logo: {
         type: String,
+    },
+    site: {
+        type: String,     
+    },
+    phone: {
+        type: String
     }
 });
 
