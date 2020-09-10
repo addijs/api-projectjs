@@ -16,6 +16,8 @@ const CompanySchema = new mongoose.Schema({
     phone: {
         type: String
     }
+}, {
+    collection: 'Companies'
 });
 
 CompanySchema.methods.toJSON = function() {
